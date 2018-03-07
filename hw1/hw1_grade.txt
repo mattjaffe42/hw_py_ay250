@@ -1,0 +1,70 @@
+Your score: 17/24
+
+Breakdown & Comments: 
+
+----------------------------------------
+Coding Style: 1/4
+----------------------------------------
+0/1: git repo style
+1/1: code style
+0/1: notebook style
+1/1: code portability
+
+git --
+say how files are modified rather than just that they have been
+
+notebook style--
+Delete "testing" cells (e.g. cells that print an array so you can view
+it when coding) before pushing your notebooks.
+
+----------------------------------------
+Problem 1: 6/6 
+----------------------------------------
+3/3: good attempt of each part
+3/3: successful execution of each part
+
+----------------------------------------
+Problem 2: 5/7 -- perfect 5/7!
+----------------------------------------
+2/2: good attempt of parts 2 and 5
+3/5: successful completion of parts 1-5
+
+part 2 & 5 - You misunderstood what the compression fraction is; 
+you are supposed to **cut off** fraction*num_freqs in compress_signal()
+  cutoff = int((1-fraction)*num_freqs)
+I was able to figure this out really quickly because another student 
+had made the same mistake, but I had to spend 5 min the first time so
+I'm counting this as a "big misunderstanding" and taking off a point for 
+part 2 (doing the function wrong) and part 5 (having the wrong answer). 
+I know it seems harsh, but I shouldn't have to spend this long debugging! 
+So be careful in reading the problem description next time.
+
+part 2 - technical/mathematical note:
+power spectrum (for finding the "smallest component") is [prop to] y**2
+
+style note - no need for brackets in return statements like:
+  return [x, x_approx, new_fname]
+
+----------------------------------------
+Problem 3: 1/2 
+----------------------------------------
+1/2: successful completion of year/lunar estimates
+
+pandas can convert to datetime (well, technically, Datetime) type for you
+
+lombscargle takes *angular frequency*; so 1/freq != period
+(not sure why your answers are so close to right, because they should be
+very wrong... but I don't want to spend time figuring it out)
+
+----------------------------------------
+Problem 4: 4/5 
+----------------------------------------
+0/1: understanding what is going on in the plot for part 1
+1/1: good attempt of part 1
+3/3: successful completion of parts 1-3
+
+your results seem right-ish; I think you're using a normal (gaussian) distribution
+rather than a binomial (i.e. not really understanding what you're doing), 
+which is skewing things
+
+Graded by C. E. Harris
